@@ -1,0 +1,55 @@
+<bx-header aria-label="Carbon for DSWDown">
+  <bx-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu"></bx-header-menu-button>
+  <bx-header-name [routerLink]="['/carbon-home']">Carbon for DSWDown</bx-header-name>
+  <bx-header-nav menu-bar-label="Carbon for DSWDown">
+    <bx-header-nav-item [routerLink]="['/carbon-home']">Carbon</bx-header-nav-item>
+    <bx-header-nav-item [routerLink]="['/carbon-ibm-home']">Carbon for IBM.com</bx-header-nav-item>
+    <bx-header-nav-item href="//localhost:4201/">DSWDown</bx-header-nav-item>
+  </bx-header-nav>
+</bx-header>
+
+<div class="bx--grid">
+  <div class="bx--row">
+    <div class="bx--col" style="margin: 6rem 0;">
+      <bx-accordion>
+        <bx-accordion-item title-text="What is Carbon?" open="true">
+          <h3>What is Carbon?</h3>
+
+          <h4>Carbon is IBM’s open source design system for products and digital experiences.</h4>
+          <h4>With the IBM Design Language as its foundation, the system consists of working code, design tools and
+            resources, human interface guidelines, and a vibrant community of contributors.</h4>
+
+          <bx-link href="https://www.carbondesignsystem.com/all-about-carbon/what-is-carbon/">Carbon reference</bx-link>
+        </bx-accordion-item>
+
+        <bx-accordion-item title-text="Frameworks">
+          <h3>Frameworks</h3>
+
+          <bx-unordered-list>
+            <bx-list-item>React</bx-list-item>
+            <bx-list-item>CSS/Vanilla</bx-list-item>
+            <bx-list-item>Angular</bx-list-item>
+            <bx-list-item>Vue</bx-list-item>
+            <bx-list-item>Svelte</bx-list-item>
+            <bx-list-item>Web Components</bx-list-item>
+          </bx-unordered-list>
+        </bx-accordion-item>
+
+        <bx-accordion-item title-text="Carbon for Angular">
+          <h3>Carbon for Angular</h3>
+
+          <h4>Just use Carbon for Angular components if you won’t use Carbon for IBM.com Web components.</h4>
+          <h4>Mixing both may cause some issues, specially with scss conflicts and long compilation time.</h4>
+        </bx-accordion-item>
+
+        <bx-accordion-item title-text="Carbon for Web Components">
+          <h3>Carbon for Web Components</h3>
+
+          <h4>There is no Carbon for IBM.com Angular components.</h4>
+          <h4>The Carbon for IBM.com team is focusing in Web Components even as a base for the Rect implementation.</h4>
+        </bx-accordion-item>
+
+      </bx-accordion>
+    </div>
+  </div>
+</div>
