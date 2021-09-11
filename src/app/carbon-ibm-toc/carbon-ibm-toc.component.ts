@@ -37,5 +37,4 @@ export class CarbonIbmTocComponent implements OnInit {
   onSearch() {
     console.log('value');
   }
-
 }

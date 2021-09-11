@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import 'carbon-web-components/es/components/button/button';
+import 'carbon-web-components/es/components/form/form-item';
+import 'carbon-web-components/es/components/input/input';
+import 'carbon-web-components/es/components/search/search';
+
 import '@carbon/ibmdotcom-web-components/es/components/content-group-simple/index';
 import '@carbon/ibmdotcom-web-components/es/components/dotcom-shell/index';
 import '@carbon/ibmdotcom-web-components/es/components/leadspace-block/index';
@@ -11,6 +16,7 @@ import '@carbon/ibmdotcom-web-components/es/components/leadspace-block/index';
   styleUrls: ['./carbon-ibm-home.component.scss']
 })
 export class CarbonIbmHomeComponent implements OnInit {
+  partNumber: string = '';
   l1Data = {
     title: 'Carbon for DSWDown',
     url: '/carbon-ibm-home',
@@ -27,4 +33,7 @@ export class CarbonIbmHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSearch() {
+    console.log('value');
+  }
 }

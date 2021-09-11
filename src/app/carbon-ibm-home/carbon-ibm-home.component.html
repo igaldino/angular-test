@@ -2,50 +2,50 @@
   <main>
     <div class="bx--grid">
       <div class="bx--row">
-        <div class="bx--col" style="margin: 6rem 0;">
+        <div class="bx--col">
           <dds-leadspace-block>
             <dds-leadspace-block-heading>Carbon for IBM.com</dds-leadspace-block-heading>
           </dds-leadspace-block>
-        </div> <!-- col -->
-      </div> <!-- row -->
-      <div class="bx--row">
-        <div class="bx--col">
+
           <dds-content-group-simple>
-            <dds-content-group-heading>About it</dds-content-group-heading>
+            <dds-content-group-heading>Overview</dds-content-group-heading>
+
             <dds-content-item>
-              <dds-content-item-heading>Carbon for IBM.com is built with Carbon at its foundation, with additional components and styling optimized for a more editorial approach that allows users to scan, read, and navigate multiple pages with comfort and ease. Our goals are to provide visual consistency and the highest quality for all IBM.com website pages.</dds-content-item-heading>
+              <dds-content-item-heading>About it</dds-content-item-heading>
+              <dds-content-item-copy>Carbon for IBM.com is built with Carbon at its foundation, with additional components and styling optimized for a more editorial approach that allows users to scan, read, and navigate multiple pages with comfort and ease. Our goals are to provide visual consistency and the highest quality for all IBM.com website pages.</dds-content-item-copy>
             </dds-content-item>
-          </dds-content-group-simple>          
-        </div> <!-- col -->
-      </div> <!-- row -->
-      <div class="bx--row">
-        <div class="bx--col">
-          <dds-content-group-simple>
-            <dds-content-group-heading>Frameworks</dds-content-group-heading>
+
             <dds-content-item>
-              <dds-content-item-heading>React and Web Components only</dds-content-item-heading>
+              <dds-content-item-heading>Frameworks</dds-content-item-heading>
+              <dds-content-item-copy>React and Web Components only</dds-content-item-copy>
             </dds-content-item>
-          </dds-content-group-simple>          
-        </div> <!-- col -->
-      </div> <!-- row -->
-      <div class="bx--row">
-        <div class="bx--col">
-          <dds-content-group-simple>
-            <dds-content-group-heading>Angular</dds-content-group-heading>
+
             <dds-content-item>
-              <dds-content-item-heading>Angular is a framework and platform that is written in TypeScript.  It is used for developing single page applications employing TypeScript and HTML template language.</dds-content-item-heading>
+              <dds-content-item-heading>Angular</dds-content-item-heading>
+              <dds-content-item-copy>Angular is a framework and platform that is written in TypeScript.  It is used for developing single page applications employing TypeScript and HTML template language.</dds-content-item-copy>
             </dds-content-item>
-          </dds-content-group-simple>          
-        </div> <!-- col -->
-      </div> <!-- row -->
-      <div class="bx--row">
-        <div class="bx--col">
-          <dds-content-group-simple>
-            <dds-content-group-heading>DSWDown Approach</dds-content-group-heading>
+
             <dds-content-item>
-              <dds-content-item-heading>The idea is to use Angular as the Javascript framework and use Carbon for IBM.com Web Components.</dds-content-item-heading>
+              <dds-content-item-heading>DSWDown Approach</dds-content-item-heading>
+              <dds-content-item-copy>The idea is to use Angular as the Javascript framework and use Carbon for IBM.com Web Components.</dds-content-item-copy>
             </dds-content-item>
-          </dds-content-group-simple>          
+
+            <dds-content-item>
+              <dds-content-item-heading>Search form example</dds-content-item-heading>
+              <dds-content-item-copy>
+                <form>
+                  <bx-form-item>
+                    <bx-input name="partNumber" label-text="Part numbers"
+                      helper-text="Enter single or multiple part numbers (separated by commas) and click Search. Example: CRPQ4EN, C47EHML."
+                      [value]="partNumber" (input)="partNumber = $event.target.value">
+                    </bx-input>
+                  </bx-form-item>
+                  <bx-btn (click)="onSearch()">Search</bx-btn>
+                </form>
+              </dds-content-item-copy>
+            </dds-content-item>
+
+      </dds-content-group-simple>
         </div> <!-- col -->
       </div> <!-- row -->
     </div>
